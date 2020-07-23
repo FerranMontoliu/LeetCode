@@ -34,11 +34,11 @@ Output: 0
 
 For this problem, we could implement a brute force algorithm which would have a time complexity of _O(N<sup>2</sup>)_. In this case, I thought it would be interesting to use a _HashMap_ in order to store a value associated with a key, being the key the number which is analyzed at each iteration of the _for_ loop and the value the number of times that this number appears in the array.
 
-So my code starts by defining an empty _HashMap_ with an _Integer_ key and an _Integer_ value (you can't use primitive types such as _int_, because the _HashMap_ needs an object). After that I create a new _int_ and give it the value of 0. This _int_ (_res_) is the one which will store the number of good pairs.
+So my code starts by defining an empty _HashMap_ with an _Integer_ key and an _Integer_ value (you can't use primitive types such as _int_, because the _HashMap_ needs an object). After that I create a new _int_ and give it the value of 0. This _int_ (`res`) is the one which will store the number of good pairs.
 
-Now we have a _for each_ with iterates through the given array. Inside, we check if we have encountered the number _n_ before. If we have, we add the value associated to this key in the _HashMap_ to _res_. After that, we increment the value by 1 in the _HashMap_. If we haven't encountered the number _n_ before, we just put the value _1_ using _n_ as the key in the _HashMap_, because now we have encountered the number once.
+Now we have a _for each_ with iterates through the given array. Inside, we check if we have encountered the number `n` before. If we have, we add the value associated to this key in the _HashMap_ to `res`. After that, we increment the value by 1 in the _HashMap_. If we haven't encountered the number `n` before, we just put the value _1_ using `n` as the key in the _HashMap_, because now we have encountered the number once.
 
-Finally, we return the _int_ storing the number of good pairs (_res_).
+Finally, we return the _int_ storing the number of good pairs (`res`).
 
 ## Code
 
