@@ -32,9 +32,9 @@ Output: [3,4,6,16,17]
 
 ## My solution
 
-We could come up with a solution that used an auxiliar array which stored the running sum in each position and it would be as efficient in time as the solution I programmed, but it would have a space complexity of _O(N)_ instead of _O(1)_, which is the space complexity of my solution.
-In my code, I start with a _for_ loop that goes from 1 to the length of the given array. That is because the first position of the answer will always be nums[0], so we can skip that, and because we skipped that, we saved some if statements to avoid null pointer exceptions in the _for_ loop.
-Inside the for loop, we add _nums[i - 1]_ and _nums[i]_, and we put that inside nums[i]. This way, each time we do this, we will have the previous running sum in _nums[i - 1]_, and we will add nums[i] and store the new running sum in _nums[i]_.
+We could come up with a solution that used an auxiliar array which stored the running sum in each position and it would be as efficient in time as the solution I programmed, but it would have a space complexity of _O(N)_ instead of _O(1)_, which is the space complexity of my solution.  
+In my code, I start with a _for_ loop that goes from 1 to the length of the given array. That is because the first position of the answer will always be nums[0], so we can skip that, and because we skipped that, we saved some if statements to avoid null pointer exceptions in the _for_ loop.  
+Inside the for loop, we add _nums[i - 1]_ and _nums[i]_, and we put that inside nums[i]. This way, each time we do this, we will have the previous running sum in _nums[i - 1]_, and we will add nums[i] and store the new running sum in _nums[i]_.  
 Finally, we return _nums_ as the answer.
 
 ## Code
