@@ -4,7 +4,7 @@ My LeetCode problems' solutions.
 ## Important information
 The problems solved in this repository are not mine, they are extracted from [LeetCode](https://leetcode.com/problemset/all/).
 
-This repository has nothing to do with the official site or the official solutions and the solutions that I programmed, although they are correct, they may not be the most optimal regarding space and/or temporal complexity.
+This repository has nothing to do with the official site or the official solutions and the solutions that I programmed, although they are correct, they may not be the most optimal regarding space and/or time complexity.
 
 All solutions are written, compiled and executed in Java.
 
@@ -17,3 +17,6 @@ Each document has:
 - The explanation of my solution.
 - The code of my solution, written in Java.
 - The space and time complexity of my solution.
+
+
+_Time complexity and space complexity could be wrong in some cases._
